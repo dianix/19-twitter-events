@@ -6,22 +6,28 @@
     <link rel="stylesheet" href="assets/estilos.css">
 </head>
 <body>
-    <header>
+    <header> <!-- título de la página y contador de clicks -->
         <h1>Twitter</h1>
         <p>Contador de clicks: </p>
         <p id="cantidadClicks">0</p>
     </header>
-    <form>
-       <textarea id="comentarioNuevo" rows="6" cols="60"></textarea>
-       <p>De</p>
-       <input type="text" id="autorComentario" onkeyup="contarCaracteres()">
+    
+    <form> <!-- sección para introducir comentario y autor -->
+       <textarea id="comentarioNuevo" rows="6" cols="60" maxlength="140"></textarea>
+       <p>De: </p>
+       <input type="text" id="areaAutor">
        <p id="cantidadCaracteres">0</p><p>/140</p>
-       <button type="button" onclick="publicar()">Enviar</button>
+       <button type="button" id="botonEnviar">Enviar</button>
     </form>
     <hr>
-    <h2>Publicaciones</h2>
+    
+    <h2>Publicaciones</h2> <!-- SECCIÓN PARA TWITTERS PUBLICADOS -->
     <section id="publicaciones">
-    <!-- AREA PARA TWITTERS PUBLICADOS -->   
+        <!-- área para twits nuevos -->
+        <article>
+            <p>Este es un comentario de prueba para darme una idea de cómo se ve.</p>
+            <h6>Dianita</h6>
+        </article>   
     </section>
     
     <script src="assets/app.js"></script>
