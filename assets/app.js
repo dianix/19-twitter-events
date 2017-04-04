@@ -39,15 +39,15 @@ function publicarTwit(){
         // elementos que componen mi publicación
         var tarjetaPublicacion = document.createElement("article");
         var twitNuevo = document.createElement("p");
-        var autorTwit = document.createElement("h6");
+        var autorTwit = document.createElement("h5");
         
         twitNuevo.innerText = areaTexto.value;
         autorTwit.innerText = areaAutor.value;
         
-        tarjetaPublicacion.appendChild(twitNuevo);
         tarjetaPublicacion.appendChild(autorTwit);
+        tarjetaPublicacion.appendChild(twitNuevo);
         
-        seccionPublicaciones.insertBefore(tarjetaPublicacion, seccionPublicaciones.firstChild);
+        seccionPublicaciones.insertBefore(tarjetaPublicacion,seccionPublicaciones.firstChild);
         
         areaTexto.value = "";
         areaAutor.value = "";
@@ -64,4 +64,3 @@ areaTexto.addEventListener("click",noContarClicks);
 areaAutor.addEventListener("click",noContarClicks);
 botonEnviar.addEventListener("click",noContarClicks);
 botonEnviar.addEventListener("click",publicarTwit);
-

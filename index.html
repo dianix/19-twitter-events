@@ -2,22 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Twitter región 4</title>
+    <title>Twirer</title>
+    <link rel="shorcut icon" type="image/x-icon" href="assets/imgs/twirer.ico">
     <link rel="stylesheet" href="assets/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
 </head>
+
 <body>
     <header> <!-- título de la página y contador de clicks -->
-        <h1>Twitter</h1>
-        <p>Contador de clicks: </p>
-        <p id="cantidadClicks">0</p>
+        <p class="cabecera">Contador de clicks: </p>
+        <p id="cantidadClicks" class="cabecera">0</p>
+        <img src="assets/imgs/twirer.png" id="tweety">
     </header>
+    <hr>
     
     <form> <!-- sección para introducir comentario y autor -->
-       <textarea id="comentarioNuevo" rows="6" cols="60" maxlength="140"></textarea>
+       <textarea id="comentarioNuevo" rows="6" cols="60" maxlength="140" placeholder="¿Que está pasando?"></textarea>
        <p>De: </p>
-       <input type="text" id="areaAutor">
+       <input type="text" id="areaAutor" placeholder="¿Quien soy?">
        <p id="cantidadCaracteres">0</p><p>/140</p>
-       <button type="button" id="botonEnviar">Enviar</button>
+       <button type="button" id="botonEnviar"><img src="assets/imgs/plumita.svg" id="plumita">Tuit</button>
     </form>
     <hr>
     
@@ -25,8 +29,8 @@
     <section id="publicaciones">
         <!-- área para twits nuevos -->
         <article>
-            <p>Este es un comentario de prueba para darme una idea de cómo se ve.</p>
-            <h6>Dianita</h6>
+            <h5>Yo mera</h5>
+            <p>Este es un tuit de prueba para darme una idea de cómo se ve.</p>
         </article>   
     </section>
     
