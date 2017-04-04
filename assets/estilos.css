@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 10px;
+}
+
+textarea, input, p {
+    display: inline;
+}
+
+hr {
+    margin: 20px;
+    border-color: aqua;
+}

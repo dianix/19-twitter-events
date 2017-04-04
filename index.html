@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter región 4</title>
+    <link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Twitter</h1>
+        <p>Contador de clicks: </p>
+        <p id="cantidadClicks">0</p>
+    </header>
+    <form>
+       <textarea id="comentarioNuevo" rows="6" cols="60"></textarea>
+       <p>De</p>
+       <input type="text" id="autorComentario" onkeyup="contarCaracteres()">
+       <p id="cantidadCaracteres">0</p><p>/140</p>
+       <button type="button" onclick="publicar()">Enviar</button>
+    </form>
+    <hr>
+    <h2>Publicaciones</h2>
+    <section id="publicaciones">
+    <!-- AREA PARA TWITTERS PUBLICADOS -->   
+    </section>
+    
+    <script src="assets/app.js"></script>
+</body>
+</html>
